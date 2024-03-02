@@ -1,2 +1,0 @@
-C:\Program Files (x86)\ComPeters, Inc\UtiLocate Draw\U2Drawx64\obj\Debug\U2Drawx64.csproj.AssemblyReference.cache
-C:\Program Files (x86)\ComPeters, Inc\UtiLocate Draw\U2Drawx64\obj\Debug\U2Drawx64.csproj.CoreCompileInputs.cache
