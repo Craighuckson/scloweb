@@ -1,20 +1,15 @@
 class DrawingForm {
   //constructor that gets the canvas and initializes it
   static init() {
-    canvas = document.getElementById("canvas");
-    context = this.canvas.getContext("2d");
-    PathAndFileName = "";
-    this.ShapeColour = "black";
-    this.LineText = "";
-    this.SelectedText = "";
-    this.DirectionText = "";
-
-    this.setupButtonHandlers();
+    let canvas = document.getElementById("canvas");
+    let context = canvas.getContext("2d")
+    DrawingForm.#setupButtonHandlers();
     context.font = "20px Arial";
     context.fillText("Canvas initialized", 10, 50);
+    return context;
   }
 
-   setupButtonHandlers() {
+   static #setupButtonHandlers() {
     let buttons = document.querySelectorAll("button");
 
     // Loop through all buttons
@@ -25,13 +20,13 @@ class DrawingForm {
         switch (event.target.innerText) {
           case "Exit":
             //change button color to yellow
-            alert("exit");
+            button.style.backgroundColor = "yellow";
             // Handle Exit button click
             break;
 
           case "Load Drawing":
             // Handle Load Drawing button click
-            alert("load");
+            button.style.backgroundColor = "red";
             break;
           case "Save Drawing":
             // Handle Save Drawing button click

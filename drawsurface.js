@@ -1,20 +1,20 @@
 class DrawingSurface {
-    constructor(canvas) {
+    constructor(ctx) {
         this.Shapes = [];
         this.TextIDs = [];
         this.SelectedShapes = [];
         this.GridOn = false;
         this.drawingissaving = false;
-        this.canvas = canvas;
+        this.context = ctx;
     }
 
     get Width() {
         //return the html canvas width
-        return this.canvas.width;
+        return document.getElementById("canvas").width;
     }
 
     get Height() {
-        return this.canvas.height;
+        return this.context.height;
     }
 
     Add(Shape) {

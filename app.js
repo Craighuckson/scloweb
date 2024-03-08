@@ -1,25 +1,6 @@
 import DrawingForm from './drawingform.js';
+import DrawingSurface from './drawsurface.js';
 
-UNDOSTACK = [];
-//dbConnection = new sqlite3.Database('drawing.db');
-SAVABLECHANGES = false;
-USERMODE = DRAWMODE.selectTool
-
-function Point(x, y) {
-    this.x = x;
-    this.y = y;
-}
-
-function dot(point1, point2) {
-    try {
-        let result;
-        let num = (point1.x * point2.x) + (point1.y * point2.y);
-        result = num;
-    } catch (ex) {
-        alert(ex);
-    }
-    return result;
-}
 
 const DRAWMODE = {
     selectTool: 0,
@@ -41,6 +22,28 @@ const DRAWMODE = {
     Resize: 16,
     Clear: 17,
 };
+
+let UNDOSTACK = [];
+//dbConnection = new sqlite3.Database('drawing.db');
+let SAVABLECHANGES = false;
+let USERMODE = DRAWMODE.selectTool
+
+function Point(x, y) {
+    this.x = x;
+    this.y = y;
+}
+
+function dot(point1, point2) {
+    try {
+        let result;
+        let num = (point1.x * point2.x) + (point1.y * point2.y);
+        result = num;
+    } catch (ex) {
+        alert(ex);
+    }
+    return result;
+}
+
 
 const LINESTYLE = {
     solid: 0,
@@ -67,5 +70,5 @@ const TEXTMODE = {
 
 
 window.onload = function() {
-    DrawingForm.init();
+    let gc = DrawingForm.init();
 }
