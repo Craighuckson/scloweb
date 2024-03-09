@@ -2,7 +2,7 @@ class DrawingForm {
   //constructor that gets the canvas and initializes it
   static init() {
     canvas = document.getElementById("canvas");
-    context = this.canvas.getContext("2d");
+    context = canvas.getContext("2d");
     PathAndFileName = "";
     this.ShapeColour = "black";
     this.LineText = "";

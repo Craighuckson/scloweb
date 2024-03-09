@@ -5,10 +5,13 @@ UNDOSTACK = [];
 SAVABLECHANGES = false;
 USERMODE = DRAWMODE.selectTool
 
-function Point(x, y) {
-    this.x = x;
-    this.y = y;
-}
+const Point = {
+    x: 0,
+    y: 0,
+};
+
+
+
 
 function dot(point1, point2) {
     try {

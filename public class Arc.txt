@@ -1,0 +1,48 @@
+public class Arc
+	private field _BoundingRectangle
+	private field _Center
+	private field _Colour
+	private field _EndAngle
+	private field _Height
+	private field _IsSelected
+	private field _lineStyle
+	private field _MyArcType
+	private field _ShapeID
+	private field _StartAngle
+	private field _Thickness
+	private field _Visible
+	private field _Width
+	public method AddVertices
+	public method .ctor
+	public property BoundingRectangle
+	public property canSelect
+	public method Clone
+	public property Colour
+	public method CreateArc
+	private field CreationIsCompleted
+	public method Draw
+	public method FinishCreation
+	public method isInSelection
+	public method isInSelection
+	public property isSelected
+	public property LineStyle
+	public method Load
+	public method Move
+	public property MyArcType
+	public method Resize
+	public method Rotate
+	private method RotatePoint
+	public method SaveToTemplate
+	public method SelectThis
+	private method SetAngles
+	public property ShapeID
+	public property ShapeType
+	public property Thickness
+	public method Unselect
+	public field Vertices
+	public property Visible
+public enum ArcType
+	enumMember LowerLeft
+	enumMember LowerRight
+	enumMember UpperLeft
+	enumMember UpperRight
