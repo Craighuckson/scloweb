@@ -9,7 +9,9 @@ class Shape {
         this.LineStyle = 0;
         this.Visible = false;
         this.BoundingRectangle = new Rectangle();
-        this.GlobalVars.ShapeType = new GlobalVars.SHAPETYPE();
+        this.ShapeType = new GlobalVars.SHAPETYPE();
+        this.canSelect = false;
+        this.isSelected = false;
     }
 
     get ShapeID() {
@@ -54,5 +56,25 @@ class Shape {
     get BoundingRectangle() {
         return this.BoundingRectangle;
     }
+
+    get ShapeType() {
+        return this.ShapeType;
+    }
+
+    //property canSelect
+
+    get canSelect() {
+        return this.canSelect;
+    }
+    set canSelect(value) {
+        this.canSelect = value;
+    }
+
+    //getter isSelected
+
+    get isSelected() {
+        return this.isSelected;
+    }
+
 
 }

@@ -58,8 +58,6 @@ class GlobalVars {
         }
         return result;
     }
-    
-    
-   
-    
 }
+
+export default GlobalVars;
