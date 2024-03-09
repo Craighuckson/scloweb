@@ -1,3 +1,3 @@
-class Arc {
+class Arc extends Shape{
     
 }
